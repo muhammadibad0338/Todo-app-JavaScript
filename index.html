@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO App</title>
+</head>
+<style>
+    .main{
+        display: flex;
+        justify-content: center;
+    }
+    table tr{
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        padding: 10px;
+    }
+    table tr td{
+        margin-bottom: 10px;
+
+    }
+</style>
+<body>
+    <h1 style="text-align: center;">Todo Application</h1>
+<div class="main">
+  <input id="todo-item" type="text" placeholder="Add Item">
+  <button onclick="addtodo()">ADD</button>
+  <button onclick="deleteall()">DELETE ALL</button>
+</div>
+<div class="main">
+  <table>
+    <tr  id="table" style="display: flex;flex-direction: column;">
+
+    </tr>
+    <br>
+  </table>
+</div>
+</body>
+<script src="app.js"></script>
+</html>
